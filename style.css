@@ -34,9 +34,9 @@ body *{
 }
 
 .container {
-  width: 360px;
-  height: 712px;
+  width: 100%;
 
+  max-width: 588px;
   margin: auto;
   padding-top: 56px auto 0px; 
 }
@@ -138,6 +138,16 @@ ul li a:hover {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px
+}
+
+@media (min-width: 700px){
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-light.jpg)
+  }
 }
 
 
